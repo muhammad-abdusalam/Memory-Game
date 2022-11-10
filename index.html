@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <!-- Controls buttons -->
+    <div class="control-btns">
+      <span class="start">Start Game</span>
+    </div>
+    <!-- Game info -->
+    <div class="info-container">
+      <div class="name">Hello: <span></span></div>
+      <div class="tries">Wrong Tries: <span>0</span></div>
+    </div>
+    <!-- Game blocks -->
+    <div class="blocks-container">
+      <div class="block" data-food="bread">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/bread.png" alt="bread" />
+        </div>
+      </div>
+      <div class="block" data-food="bread">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/bread.png" alt="bread" />
+        </div>
+      </div>
+      <div class="block" data-food="banana">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/banana.png" alt="banana" />
+        </div>
+      </div>
+      <div class="block" data-food="banana">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/banana.png" alt="banana" />
+        </div>
+      </div>
+      <div class="block" data-food="eggs">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/eggs.png" alt="eggs" />
+        </div>
+      </div>
+      <div class="block" data-food="eggs">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/eggs.png" alt="eggs" />
+        </div>
+      </div>
+      <div class="block" data-food="hamburger">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/hamburger.png" alt="hamburger" />
+        </div>
+      </div>
+      <div class="block" data-food="hamburger">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/hamburger.png" alt="hamburger" />
+        </div>
+      </div>
+      <div class="block" data-food="mango">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/mango.png" alt="mango" />
+        </div>
+      </div>
+      <div class="block" data-food="mango">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/mango.png" alt="mango" />
+        </div>
+      </div>
+      <div class="block" data-food="milk">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/milk.png" alt="milk" />
+        </div>
+      </div>
+      <div class="block" data-food="milk">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/milk.png" alt="milk" />
+        </div>
+      </div>
+      <div class="block" data-food="orange">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/orange.png" alt="orange" />
+        </div>
+      </div>
+      <div class="block" data-food="orange">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/orange.png" alt="orange" />
+        </div>
+      </div>
+      <div class="block" data-food="pizza">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/pizza.png" alt="pizza" />
+        </div>
+      </div>
+      <div class="block" data-food="pizza">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/pizza.png" alt="pizza" />
+        </div>
+      </div>
+      <div class="block" data-food="poultry-leg">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/poultry-leg.png" alt="poultry-leg" />
+        </div>
+      </div>
+      <div class="block" data-food="poultry-leg">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/poultry-leg.png" alt="poultry-leg" />
+        </div>
+      </div>
+      <div class="block" data-food="rice">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/rice.png" alt="rice" />
+        </div>
+      </div>
+      <div class="block" data-food="rice">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="images/rice.png" alt="rice" />
+        </div>
+      </div>
+    </div>
+    <!-- Game End -->
+    <div class="the-end">
+      <span class="msg">You Lose !</span>
+      <span class="restart">Restart</span>
+    </div>
+    <!-- Background Sounds -->
+    <audio
+      id="background-sound"
+      src="audio/background.mp3"
+      type="audio/mpeg"
+      loop
+      autoplay
+    ></audio>
+    <!-- Success & Failure effects -->
+    <audio id="success" src="audio/success.mp3" type="audio/mpeg"></audio>
+    <audio id="fail" src="audio/wrong.mp3" type="audio/mpeg"></audio>
+    <script src="main.js"></script>
+  </body>
+</html>
